@@ -1,64 +1,65 @@
   <h1>Calculadora</h1>
-  
+
   <div class="Calculadora">
-  <div id="resultadoD">
-    {{campo1}}<div id="resultadoF">{{campoF1}}{{operacion}}{{campo2}}={{resultado}}</div>
+    <div id="resultadoD">
+      {{resultado_anterior}}
+      <div id="resultadoF">{{operacion}} = {{resultado}}</div>
+    </div>
+    <button class="Caja" id="limpiar" (click)="borrarTodo()">
+      c
+    </button>
+    <button class="Caja" id="borrar" (click)="borrar()">
+      ←
+    </button>
+    <button class="Caja" id="porcentaje" (click)="pulsarBoton('%')">
+      %
+    </button>
+    <button class="Caja" id="division" (click)="pulsarBoton('/')">
+      /
+    </button>
+    <button class="Caja c7" (click)="pulsarBoton('7')">
+      7
+    </button>
+    <button class="Caja c8" (click)="pulsarBoton('8')">
+      8
+    </button>
+    <button class="Caja c9" (click)="pulsarBoton('9')">
+      9
+    </button>
+    <button class="Caja cX" (click)="pulsarBoton('*')">
+      *
+    </button>
+    <button class="Caja c4" (click)="pulsarBoton('4')">
+      4
+    </button>
+    <button class="Caja c5" (click)="pulsarBoton('5')">
+      5
+    </button>
+    <button class="Caja c6" (click)="pulsarBoton('6')">
+      6
+    </button>
+    <button class="Caja c-" (click)="pulsarBoton('-')">
+      -
+    </button>
+    <button class="Caja c1" (click)="pulsarBoton('1')">
+      1
+    </button>
+    <button class="Caja c2" (click)="pulsarBoton('2')">
+      2
+    </button>
+    <button class="Caja c3" (click)="pulsarBoton('3')">
+      3
+    </button>
+    <button class="Caja" id="sumar" (click)="pulsarBoton('+')">
+      +
+    </button>
+    <button class="Caja c0" (click)="pulsarBoton('0')">
+      0
+    </button>
+    <button class="Caja" (click)="pulsarBoton('.')">
+      .
+    </button>
+    <button class="Caja" (click)="pulsarIgual()">
+      =
+    </button>
   </div>
-  <button class="Caja" id="limpiar"(click)="borrartodo()">
-    c
-  </button>
-  <button class="Caja" id="borrar"(click)="borrar()">
-    ←
-  </button>
-  <button class="Caja" id="porcentaje">
-    %
-  </button>
-  <button class="Caja" id="division"(click)="division()">
-    /
-  </button>
-  <button class="Caja c7" (click)="siete()">
-    7
-  </button>
-  <button class="Caja c8"(click)="ocho()">
-    8
-  </button>
-  <button class="Caja c9"(click)="nueve()">
-    9
-  </button>
-  <button class="Caja cX"(click)="multiplicacion()">
-    x
-  </button>
-  <button class="Caja c4" (click)="cuatro()">
-    4
-  </button>
-  <button class="Caja c5"(click)="cinco()">
-    5
-  </button>
-  <button class="Caja c6"(click)="seis()">
-    6
-  </button>
-  <button class="Caja c-"(click)="resta()">
-    -
-  </button>
-  <button class="Caja c1"(click)="uno()">
-    1
-  </button>
-  <button class="Caja c2"(click)="dos()">
-    2
-  </button>
-  <button class="Caja c3"(click)="tres()">
-    3
-  </button>
-  <button class="Caja" id="sumar" (click)="suma()">
-    +
-  </button>
-  <button class="Caja c0"(click)="cero()">
-    0
-  </button>
-  <button class="Caja" (click)="coma()">
-    ,
-  </button>
-  <button class="Caja" (click)="igual()">
-    =
-  </button>
-</div>
