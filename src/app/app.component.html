@@ -1,0 +1,64 @@
+  <h1>Calculadora</h1>
+  
+  <div class="Calculadora">
+  <div id="resultadoD">
+    {{campo1}}<div id="resultadoF">{{campoF1}}{{operacion}}{{campo2}}={{resultado}}</div>
+  </div>
+  <button class="Caja" id="limpiar"(click)="borrartodo()">
+    c
+  </button>
+  <button class="Caja" id="borrar"(click)="borrar()">
+    ←
+  </button>
+  <button class="Caja" id="porcentaje">
+    %
+  </button>
+  <button class="Caja" id="division"(click)="division()">
+    /
+  </button>
+  <button class="Caja c7" (click)="siete()">
+    7
+  </button>
+  <button class="Caja c8"(click)="ocho()">
+    8
+  </button>
+  <button class="Caja c9"(click)="nueve()">
+    9
+  </button>
+  <button class="Caja cX"(click)="multiplicacion()">
+    x
+  </button>
+  <button class="Caja c4" (click)="cuatro()">
+    4
+  </button>
+  <button class="Caja c5"(click)="cinco()">
+    5
+  </button>
+  <button class="Caja c6"(click)="seis()">
+    6
+  </button>
+  <button class="Caja c-"(click)="resta()">
+    -
+  </button>
+  <button class="Caja c1"(click)="uno()">
+    1
+  </button>
+  <button class="Caja c2"(click)="dos()">
+    2
+  </button>
+  <button class="Caja c3"(click)="tres()">
+    3
+  </button>
+  <button class="Caja" id="sumar" (click)="suma()">
+    +
+  </button>
+  <button class="Caja c0"(click)="cero()">
+    0
+  </button>
+  <button class="Caja" (click)="coma()">
+    ,
+  </button>
+  <button class="Caja" (click)="igual()">
+    =
+  </button>
+</div>
